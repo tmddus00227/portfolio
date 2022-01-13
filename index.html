@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SEUNGYEON PORTFOLIO</title>
+  <!-- css 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 공통서식 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 레이아웃 -->
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <!-- 메인서식 -->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 웹폰트 -->
+  <link href="./css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- 파비콘 -->
+  <link href="./images/logo_exb_icon.ico" rel="shortcut icon" type="image/x-icon">
+
+  <!-- css3 접두사 생성 스크립트 -->
+  <script src="./script/prefixfree.min.js"></script>
+  <!-- 제이쿼리 -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./script/main.js"></script>
+  <script src="./script/jquery.cookie.js"></script>
+</head>
+<body>
+  <!-- 헤더 영역 -->
+  <header>
+    <h1>
+      <a href="#" title="상단로고">
+        <img src="./images/logo5.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <nav>
+      <ul class="gnb">
+        <li>
+          <a href="#about" title="어바웃" class="arctic_scroll">ABOUT<i class='fas fa-caret-right'></i></a>
+        </li>
+        <li>
+          <a href="#portfolio" title="포트폴리오" class="arctic_scroll">PORTFOLIO<i class='fas fa-caret-right'></i></a>
+        </li>
+        <li>
+          <a href="#gallery" title="갤러리" class="arctic_scroll">GALLERY<i class='fas fa-caret-right'></i></a>
+        </li>
+        <li>
+          <a href="#qna" title="질문과답변" class="arctic_scroll">Q&#x0026;A<i class='fas fa-caret-right'></i></a>
+        </li>
+        <li>
+          <a href="#contact" title="컨택" class="arctic_scroll">CONTACT<i class='fas fa-caret-right'></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 영역 -->
+  <main>
+  <section id="main">
+    <!-- <img src="./images/메인배너.jpg" alt="메인배너"> -->
+  </section>
+
+  <section id="about">
+    <h2>ABOUT</h2>
+
+    <ul class="photo">
+      <li>
+          <img src="./images/typo1.png" alt="타이포그래피1">
+      </li>
+      <li>
+          <img src="./images/profile.jpg" alt="사진">
+      </li>
+      <li>
+          <p class="t_01">강승연 <span class="tt_01">Kang Seungyeon</span></p>
+          <p class="t_02">저는 끈기와 책임감으로 끝까지 노력하는 사람입니다.</p>
+          <p class="t_03">저는 하고자 하는 일이 있다면 바로 실행하는 사람입니다.</p>
+      </li>
+    </ul>
+
+    <ul class="txt">
+      <li>
+          <p><span id="title">BIRTH</span> 1999.02.27</p>
+          <p><span id="title">PASTIME</span> 음악감상, 조립, 만들기</p>
+          <p><span id="title">E-mail</span> tmddus00227@naver.com</p>
+      </li>
+      <li>
+          <p id="title">EDUCATION</p>
+          <p>2022 [그린컴퓨터아트학원] 과정평가형 웹디자인기능사 수료</p>
+          <p>2020 국제예술대학교 공연기획과 졸업</p>
+          <p>2018 전라북도 군산시 중앙여자고등학교 졸업</p>
+      </li>
+      <li>
+          <p id="title">CERTIDICATE</p>
+          <p>2017 정보기술자격 ITQ 아래한글, 한글파워포인트, 한글엑셀 A등급 [한국생산성본부]</p>
+          <p>2018 컴퓨터활용능력 2급 [대한상공회의소]</p>
+          <p>2021 GTQ(그래픽기술자격) 1급 [한국생산성본부]</p>
+      </li>
+    </ul>
+
+    <div id="skill">
+      <span id="title">SKILL</span>
+      <ul class="skill">
+        <li>
+          <div class="bar">
+            <div class="ball"></div>
+            <span class="s_k01">HTML5</span>
+          </div>
+        </li>
+        <li>
+            <div class="bar">
+                <div class="ball"></div>
+                <span class="s_k01">CSS3</span>
+            </div>
+        </li>
+        <li>
+            <div class="bar">
+                <div class="ball"></div>
+                <span class="s_k01">Javascript</span>
+            </div>
+        </li>
+        <li>
+            <div class="bar">
+                <div class="ball"></div>
+                <span class="s_k01">jQuery</span>
+            </div>
+        </li>
+        <li>
+            <div class="bar">
+                <div class="ball"></div>
+                <span class="s_k01">Photoshop</span>
+            </div>
+        </li>
+        <li>
+            <div class="bar">
+                <div class="ball"></div>
+                <span class="s_k01">Illustrator</span>
+            </div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="portfolio">
+    <h2>PORTFOLIO</h2>
+    <article>
+    <ul class="hilling">
+      <li>
+          <a href="#" title="힐링횡성 목업">
+              <img src="./images/mockup1_2.png" alt="힐링횡성 목업">
+          </a>
+      </li>
+      <li>&nbsp;</li>
+      <li>
+          <img src="./images/typo2.png" alt="타이포그래피2">
+      </li>
+      <li>
+          <p class="t_04">01. 힐링 횡성</p>
+          <p class="t_05">디자인 모바일 홈페이지</p>
+          <p class="t_06">횡성군은 대한민국 강원도에 위치해 있으며,
+          한우와 안흥찐빵 등이 대표적인 특산물로 유명하다.
+          횡성의 맛집뿐만 아니라 자연경관도 알리기 위한
+          관광 사이트인 '힐링횡성' 사이트입니다.</p>
+      </li>
+      <li>
+        <p>*이미지를 클릭하시면 상세정보를 보실 수 있습니다.</p>
+      </li>
+      <li class="d_site">
+          <a href="http://tmddus00227.dothome.co.kr/0916" title="디자인 사이트" class="button">Design Site <i class="fas fa-angle-right"></i></a>
+      </li>
+    </ul>
+
+    <ul class="sangol">
+      <li>
+          <a href="#" title="산골초가펜션 목업">
+              <img src="./images/mockup2.png" alt="산골초가펜션 목업">
+          </a>
+      </li>
+      <li>&nbsp;</li>
+      <li>
+          <img src="./images/typo2.png" alt="타이포그래피2">
+      </li>
+      <li>
+          <p class="t_04">02. 산골초가펜션</p>
+          <p class="t_05">리디자인 반응형웹 홈페이지</p>
+          <p class="t_06">촌캉스가 새로운 여행 트렌드로 떠오르는 요즘,
+          강원도 영월의 그림 같은 풍경을 선물해줄 좋은 휴식처이며, 
+          숙박 서비스를 제공하고 있는 '산골초가펜션' 사이트입니다.</p>
+      </li>
+      <li>
+        <p>*이미지를 클릭하시면 상세정보를 보실 수 있습니다.</p>
+      </li>
+      <li class="origin">
+          <a href="#" title="원래사이트" class="button">Original Site <i class="fas fa-angle-right"></i></a>
+      </li>
+      <li class="renewal">
+          <a href="http://tmddus00227.dothome.co.kr/0916" title="리뉴얼사이트" class="button">Renewal Site <i class="fas fa-angle-right"></i></a>
+      </li>
+    </ul>
+
+    <ul class="crispy">
+      <li>
+          <a href="#" title="크리스피크림도넛 목업">
+              <img src="./images/mockup3.png" alt="크리스피크림도넛 목업">
+          </a>
+      </li>
+      <li>&nbsp;</li>
+      <li>
+        <img src="./images/typo2.png" alt="타이포그래피2">
+      </li>
+      <li>
+          <p class="t_04">03. 크리스피크림도넛</p>
+          <p class="t_05">리디자인 반응형 홈페이지</p>
+          <p class="t_06">미국 전통의 글레이즈드 도넛으로 유명하며, 
+              우리나라 내에서는 롯데GRS에서 
+              크리스피 크림의 라이선스를 받아 
+              운영되고 있는 '크리스피크림도넛'의 사이트입니다.</p>
+      </li>
+      <li>
+        <p>*이미지를 클릭하시면 상세정보를 보실 수 있습니다.</p>
+      </li>
+      <li class="origin">
+          <a href="#" title="원래사이트" class="button">Original Site <i class="fas fa-angle-right"></i></a>
+      </li>
+      <li class="renewal">
+          <a href="http://tmddus00227.dothome.co.kr/0916" title="리뉴얼사이트" class="button">Renewal Site <i class="fas fa-angle-right"></i></a>
+      </li>
+    </ul>
+
+    <ul class="blackpink">
+      <li>
+          <a href="#" title="블랙핑크 목업">
+              <img src="./images/mockup4.png" alt="블랙핑크 목업">
+          </a>
+      </li>
+      <li>&nbsp;</li>
+      <li>
+        <img src="./images/typo2.png" alt="타이포그래피2">
+      </li>
+      <li>
+          <p class="t_04">04. 블랙핑크 공식홈페이지</p>
+          <p class="t_05">리디자인 PC 홈페이지 </p>
+          <p class="t_06">2016년에 데뷔한 yg엔터테인먼트 소속 4인조 걸그룹이다.
+              걸그룹 블랙핑크에 대해 더욱 많은 정보를 알고 싶고,
+              활동 이력 등을 알고 싶은 사람들을 위한 '블랙핑크'의 공식 사이트입니다.</p>
+      </li>
+      <li>
+        <p>*이미지를 클릭하시면 상세정보를 보실 수 있습니다.</p>
+      </li>
+      <li class="origin">
+          <a href="#" title="원래사이트" class="button">Original Site <i class="fas fa-angle-right"></i></a>
+      </li>
+      <li class="renewal">
+          <a href="http://tmddus00227.dothome.co.kr/0916" title="리뉴얼사이트" class="button">Renewal Site <i class="fas fa-angle-right"></i></a>
+      </li>
+    </ul>
+
+    <div id="pc_btn">
+      <div class="arrow_left"></div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="arrow_right"></div>
+    </div>
+
+  </article>
+  </section>
+
+  <section id="gallery">
+    <h2>GALLERY</h2>
+    <nav class="g_lnb">
+        <ul>
+          <li><a href="#" title="전체보기">ALL</a></li>
+          <li><a href="#" title="디자인">디자인</a></li>
+          <li><a href="#" title="배너">배너</a></li>
+          <li><a href="#" title="UIUX">UIUX</a></li>
+        </ul>
+      </nav>
+  
+        <ul class="g_list">
+            <li class="banner"><a href="#" title="배너"><img src="./images/banner01.jpg" alt="배너"></a></li>
+            <li class="banner"><a href="#" title="배너"><img src="./images/banner02.jpg" alt="배너"></a></li>
+            <li class="banner"><a href="#" title="배너"><img src="./images/banner03.jpg" alt="배너"></a></li>
+            <li class="design"><a href="#" title="디자인"><img src="./images/design1.jpg" alt="디자인"></a></li>
+            <li class="design"><a href="#" title="디자인"><img src="./images/design2.jpg" alt="디자인"></a></li>
+            <li class="uiux"><a href="#" title="사용자인터페이스경험"><img src="./images/design3.jpg" alt="UIUX"></a></li>
+            <li class="design"><a href="#" title="디자인"><img src="./images/logodesign.jpg" alt="디자인"></a></li>
+            <li class="design"><a href="#" title="디자인"><img src="./images/pattern.jpg" alt="디자인"></a></li>
+            <li class="uiux"><a href="#" title="UIUX"><img src="./images/uiuxdesign.jpg" alt="UIUX"></a></li>
+        </ul>  
+
+      <a href="#" title="더보기" class="button">더보기</a>
+  </section>
+
+  <section id="qna">
+    <h2>Q&A</h2>
+    <article class="qna">
+      <ul>
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+        </li>
+
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+        </li>
+
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+      </li>
+
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+      </li>
+
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+      </li>
+
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+      </li>
+
+        <li>
+          <a href="#">질문
+          <i class="fas fa-angle-down"></i></a>
+          <p>
+          답변
+          </p>
+      </li>
+    </ul>
+  </article>
+
+  <article id="q_slide">
+    <div class="q_img">
+      <img src="./images/qna3.jpg" alt="승연갤러리1">
+      <img src="./images/qna1.jpg" alt="승연갤러리2">
+      <img src="./images/qna2.jpg" alt="승연갤러리3">
+      <img src="./images/qna.jpg" alt="승연갤러리4">
+  </div>
+
+  <ul class="qc_btn">
+    <li class="act3">&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+    <li>&nbsp;</li>
+  </ul>
+  </article>
+
+  </section>
+
+  <section id="contact">
+      <h2>CONTACT</h2>
+  </section>
+
+  </main>
+
+  <!-- 푸터 영역 -->
+  <footer>
+      <address>Copyright &copy; 2021 KangSeungyeon All Rights Reserved.<br>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다.<br>일부 내용 및 이미지 등은 별도의 출처가 있습니다.</address>
+  </footer>
+
+  <script src="./script/jquery.arctic_scroll.js"></script>
+  <script>
+  $(function(){
+      $(".arctic_scroll").arctic_scroll({
+          speed: 800
+      });
+  });
+  </script>
+</body>
+</html>

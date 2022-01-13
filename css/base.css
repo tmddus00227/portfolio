@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+/* 모든 페이지에 적용되는 공통서식 */
+body{
+  background-color:#fff;
+  font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+  font-size:12px;
+  color:#333;
+}
+
+a{text-decoration:none;color:#333;}
+
+/* 모달서식 */
+.modal{
+  width:100%;height:100%;
+  position:fixed;top:0px;left:0px;
+  background-color:rgba(0,0,0,.7);
+  z-index:1000;
+}
+.m_img{
+  width:900px;
+  margin:0px auto;
+}
+.modal p{
+  width:450px;
+  margin:0px auto;
+  line-height:40px;
+  background-color:#C6B8B4;
+  font-size:14px;
+  text-align:left;
+}
+.modal #m_btn{
+  border:none;
+  transform:translateX(240px);
+  font-size:16px;
+  background-color:#C6B8B4;
+}
