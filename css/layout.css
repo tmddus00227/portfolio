@@ -22,12 +22,12 @@ header > h1 > a img{width:100px;}
   text-align:center;
 }
 .gnb > li a{
-  font-size:1.1rem;
+  font-size:1.2rem;
   font-weight:bold;
   line-height:50px;
   letter-spacing: 2px;
   font-family: 'Nanum Myeongjo', serif;
-  color:#735046;
+  /* color:#735046; */
   display:block;
 }
 .gnb > li > a > i{
@@ -35,13 +35,14 @@ header > h1 > a img{width:100px;}
   padding-left:10px;
   display:none;
 }
-.act4{display:block !important;}
+.act4{
+  text-decoration:underline;color:#735046 !important;
+}
 
 /* 메인 영역 */
-/* main{background-color: #F1F0EC;} */
 #main{
   height:930px;
-  background-color:#e0f1db;
+  background-color:#ffffff;
 }
 #about{
   height:900px;
@@ -52,7 +53,7 @@ header > h1 > a img{width:100px;}
   /* border:1px solid #5f5f5f; */
 }
 #gallery{
-  height:870px;
+  height:780px;
   /* border:1px solid #5f5f5f; */
 }
 #qna{
@@ -61,7 +62,7 @@ header > h1 > a img{width:100px;}
 }
 #contact{
   height:400px;
-  border:1px solid #5f5f5f;
+  /* border:1px solid #5f5f5f; */
 }
 
 /* 푸터 영역 */

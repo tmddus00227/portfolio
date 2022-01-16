@@ -22,6 +22,73 @@ main{
   clear:both;
 }
 
+/* MAIN */
+.main_p{
+  position:relative;
+  width:1500px;height:930px;
+  margin:0px auto;
+  overflow:hidden;
+}
+.gear_w li:first-child{
+  width:950px;
+  position:absolute;
+  right:-2%;top:-1%;
+  z-index:1;
+} 
+.gear_w li:first-child img{
+  width:100%;
+}
+.gear_w li:nth-child(2){
+  width:680px;
+  position:absolute;
+  right:7%;top:14%;
+}
+.gear_w li:nth-child(2) img{
+  width:100%;
+  animation: rotate_image 30s linear infinite;
+  transform-origin: 50% 50%;} 
+  @keyframes rotate_image{ 100% { transform: rotate(360deg);}
+}
+.gear_w li:last-child{
+  position:absolute;
+  left:6%;bottom:25%;
+}
+.gt_01{
+  font-size:1rem;
+  padding-bottom:20px;
+}
+.gt_02{
+  font-size:3rem;
+  padding-bottom:15px;
+}
+.gt_03{
+  font-size:4rem;
+  font-weight:bold;
+}
+.gt_04{
+  font-size:4rem;
+  font-weight:400;
+}
+
+/* 메인 이미지슬라이드 */
+.g_slide{
+  width:400px;height:400px;
+  position:relative;
+  top:29%;left:57.5%;
+  z-index:2;
+}
+.g_slide > ul > li{
+  position:absolute;
+}
+.g_slide > ul > li:first-child{
+  z-index:100;
+}
+.g_slide img{
+  width:400px;height:400px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
 /* ABOUT */
 /* 왼쪽 */
 #about{position:relative;}
@@ -53,7 +120,7 @@ main{
   }
 .photo > li:last-child{
   position:absolute;
-  bottom:28%;left:12%;
+  bottom:19%;left:12%;
 }
 .t_01{
   width:220px;
@@ -63,7 +130,8 @@ main{
   /* background-color:rgba(115, 80, 70, .6); */
 }
 .tt_01{font-size:1rem;}
-.t_02, .t_03{
+.t_02{
+  line-height:27px;
   padding-top:20px;
   font-size:0.9rem;
 }
@@ -121,111 +189,78 @@ main{
 
 /* PORTFOLIO */
 #portfolio{
+  width:1300px;height:650px;
+  margin:0px auto;
   position:relative;
-  padding-top:0.5%;
-  clear:both;
 }
 #portfolio h2{
-  padding:50px 0px 0px 130px;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size:1.8rem;
+  font-weight:bold;
+  margin:5% 0px 0px 4%;
 }
-#portfolio > ul{
-  width:1300px;
-} 
-#portfolio ul>li:first-child{
-  width:550px;
-  position:absolute;
-  top:20%;left:13%;
+.p_slide > ul > li:nth-child(2),
+.p_slide > ul > li:nth-child(3),
+ .p_slide > ul > li:last-child{
+  display:none;
 }
-#portfolio ul > li:first-child > a img{
-  width:100%;height:350px;
+
+/* 이미지목업 */
+#p_img{
+  width:550px;height:350px;
+  float:left;
+  margin:5% 0px 0px 12%;
   object-fit:cover;
+}
+#p_img img{
+  width:100%;
   border:1px solid #ccc;
 }
-#portfolio ul>li:nth-child(2){
-  border-left:1px solid #C6B8B4;
-  height:150px;
-  position:absolute;
-  top:51%;left:57%;
+/* 텍스트 */
+#p_txt{
+  width:370px;
+  float:right;
+  margin:10% 11% 0px 0px;
 }
-#portfolio ul>li:nth-child(3){
+#p_txt h3{
+  font-size:1.6rem;
+  padding-bottom:10px;
+}
+#p_txt .p_t01{
+  font-size:0.9rem;
+  padding-bottom:20px;
+}
+#p_txt .p_t02{
+  font-size:1rem;
+  line-height:27px;
+}
+/* 버튼 */
+#p_btn1{
+  margin:10% 0px;
+}
+
+/* 꾸미기 */
+.typo2{
   width:130px;
   position:absolute;
-  top:63%;left:8%;
+  top:60%;left:7.5%;
   z-index:1000;
 }
-#portfolio ul>li:nth-child(3)>img{
+.typo2 img{
   width:100%;
   animation: rotate_image 30s linear infinite;
   transform-origin: 50% 50%;} 
   @keyframes rotate_image{ 100% { transform: rotate(360deg);}
 }
-#portfolio ul>li:nth-child(4){
+.p_info{
   position:absolute;
-  top:26%;right:15%;
+  top:73%;left:34%;
 }
-.t_04{
-  font-size:1.8rem;
-  font-weight:500;
-  padding-bottom:15px;
-}
-.t_05{
-  font-size:1.1rem;
-  font-weight:500;
-  padding-bottom:20px;
-}
-.t_06{
-  width:300px;
-  font-size:1rem;
-  line-height:20px;
-}
-#portfolio ul>li:nth-child(5){
+.boxbar{
+  border-left:1px solid #C6B8B4;
+  height:140px;
   position:absolute;
-  top:75%;left:35%;
-}
-/* 버튼 위치 */
-.renewal{
-  position:absolute;
-  top:63%;right:27%;
-}
-.origin{
-  position:absolute;
-  top:70%;right:27.3%;
-}
-.d_site{
-  position:absolute;
-  top:63%;right:27.9%;
-}
-/* 좌우슬라이드 */
-#pc_btn{
-  position:relative;
-}
-.arrow_left {
-  position:relative;
-  top:0px;left:0px;
-  cursor: pointer;
-}
-.arrow_left::after{
-  position: absolute; 
-  left: 40px; top:200px; 
-  content: ''; 
-  width: 40px; height: 40px;
-  border-top: 2px solid #735046;
-  border-right: 2px solid #735046;
-  transform: rotate(225deg);
-}
-.arrow_right {
-  position: relative;
-  top:0px;right:0px;
-  cursor: pointer;
-}
-.arrow_right::after{
-  position: absolute; 
-  right:40px; top:200px; 
-  content: ''; 
-  width: 40px; height: 40px;
-  border-top: 3px solid #735046;
-  border-right: 3px solid #735046;
-  transform: rotate(45deg); 
+  top:54%;left:56%;
 }
 
 /* 버튼 */
@@ -322,7 +357,7 @@ main{
 /* QNA */
 #qna{padding-top:5%;}
 #qna h2{
-  padding:50px 0px 30px 5%;
+  padding:70px 0px 30px 5%;
 }
 .qna{
   float:left;
@@ -347,16 +382,17 @@ main{
 }
 .qna > ul > li > a{
   border-bottom:1px solid #ccc;
-  padding:20px 10px 20px 10px;
+  padding:25px 10px 25px 10px;
   display:block;
-  font-size:14px;
+  font-size:15px;
 }
 .qna > ul > li > p{ 
   /* font-size:14px; */
   background-color:#f4f4f2;
-  padding:30px 10px 30px 10px;
+  padding:40px 10px 40px 10px;
   display:none;
   line-height:23px;
+  font-size:14px;
 }
 .act2{transform:rotate(180deg);}
 /* 큐앤에이 이미지 */
@@ -397,6 +433,36 @@ main{
 #contact h2{
   padding:40px 0px 0px 5%;
 }
+#contact > ul > li:first-child{
+  width:500px;height:300px;
+  float:left;
+  padding:40px 0px 0px 120px;
+}
+#contact > ul > li:first-child img{width:100%;}
+#contact > ul > li:nth-child(2){
+  float:right;
+  font-size:1.1rem;
+  line-height:30px;
+  padding:100px 300px 0px 0px;
+}
+#contact > ul > li:last-child a{
+  float:right;
+  margin:25px 395px 0px 0px;
+  padding:10px;
+  font-size:1rem;
+  font-weight:500;
+  color:#735046;
+  border:1px solid #735046;
+}
+#contact > ul > li:last-child a:hover{
+  background-color:#f1f0ec;
+}
+.ct_1, .ct_2{
+  font-weight:500;
+  color:#735046;
+}
+.ct_1{padding-right:23px;}
+.ct_2{padding-right:15px;}
 
 /* 푸터 영역 */
 address{
