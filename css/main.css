@@ -222,15 +222,15 @@ main{
   float:right;
   margin:10% 11% 0px 0px;
 }
-#p_txt h3{
+.p_txt h3{
   font-size:1.6rem;
   padding-bottom:10px;
 }
-#p_txt .p_t01{
+.p_txt .p_t01{
   font-size:0.9rem;
   padding-bottom:20px;
 }
-#p_txt .p_t02{
+.p_txt .p_t02{
   font-size:1rem;
   line-height:27px;
 }
