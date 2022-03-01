@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-//스크롤 내리거나, 내비 클릭시 밑줄
+//내비 클릭시 밑줄
 let gnb = $('.gnb li a');
 
 gnb.click(function(){
@@ -9,10 +9,43 @@ gnb.click(function(){
   $(this).removeClass('act4'); 
   $(this).addClass('act4');
 });
+//스크롤 내릴때 내비 밑줄
+// $(window).scroll(function(){
+// 	var scroll = $(window).scrollTop();
+// 	//console.log(scroll);
+// 	if(scroll >= 0){
+// 		// console.log('a');
+// 		$(".gnb li a").removeClass('act4');
+//   } else if(scroll >= 930){
+//     $(".gnb li:first-child a").addClass('act4');
+//   }
+// 	// } else{
+// 	// 	//console.log('a');
+// 	// 	$(".gnb li:first-child a").removeClass("act4");
+// 	// }
+// });
+// var num = prompt( "원하는 숫자를 입력하세요.", "" );
+
+// if ( num >= 100 )
+// {
+//   document.write ( "입력한 숫자는 100 이상입니다." );
+// }
+// else if ( num >= 50 )
+// {
+//   document.write ( "입력한 숫자는 50 이상, 99 이하입니다." );
+// }
+// else if (num >= 0 )
+// {
+//   document.write ( "입력한 숫자는 0 이상, 49 이하입니다." )
+// }
+// else
+// {
+//   document.write( "입력한 숫자는 음수입니다." );
+// }
 
 //메인 이미지 슬라이드
 let g = 0;
-//슬라이드 함수
+
 function fadeInOut(){
   $('.g_slide li').stop().fadeOut();
 
@@ -21,15 +54,19 @@ function fadeInOut(){
   }else{ 
     g++;
   }
-  
+
   $('.g_slide li').eq(g).stop().fadeIn();
-};
+
+  }
+
+  let Timer = setInterval(fadeInOut, 3000);
+
 
 //어바웃 스킬바
 $(window).scroll(function(){
   let skill = $(this).scrollTop();
   console.log(skill);
-  if(skill>=800){
+  if(skill>=780){
     $('.skill > li:first-child > .bar').stop().animate({'width':'80%'},500);
     $('.skill > li:nth-child(2) > .bar').stop().animate({'width':'80%'},500);
     $('.skill > li:nth-child(3) > .bar').stop().animate({'width':'30%'},500);
@@ -47,6 +84,13 @@ $(window).scroll(function(){
 });
 
 //포트폴리오 탭콘텐츠
+$('.port01').show();
+
+$('.p_con > ul > li > a').click(function(){
+  $('.p_con > ul > li > div').hide();
+  $(this).next().show();
+  return false;
+});
 
 //갤러리 내비 클릭 시 색 변경
 const img_list = $('.g_list > li');
@@ -131,7 +175,7 @@ function move(n){
 }
 
 let num = 0;
-let Timer = setInterval(function(){
+let Timer2 = setInterval(function(){
   if(num == 3){
     num = 0;
     $('.qc_btn li').removeClass('act3');
