@@ -16,7 +16,7 @@ h2{
   width:1300px;
   margin:0px auto;
 }
-#about h2, #gallery h2, #qna h2, #contact h2{
+#about h2, #about h2, #gallery h2, #qna h2, #contact h2{
   display:none;
 }
 
@@ -60,57 +60,50 @@ header{
 }
 
 /* 메인 영역 */
-main{
-  overflow:hidden;
-  clear:both;
-}
+main{clear:both;}
 
 /* MAIN */
-#main{
-  height:950px;
+.m_wrap{ 
   background-color:#F1F0EC;
-  position:relative;
   overflow:hidden;
 }
-#main > ul > li:first-child > p{
-  position:absolute;
-  left:480px;bottom:150px;
-  font-size:18px;
-  line-height:28px;
-  /* text-align:center; */
-  /* display:none; */
+#main{
+  width:1300px;height:930px;
+  margin:0px auto;
+  background-color:#F1F0EC;
+  position:relative;
 }
 #main > ul > li:first-child > img{
   position:absolute;
-  left:150px;bottom:-250px;
-  animation: rotate_image 40s linear infinite;
+  left:-15%;bottom:-20%;
+  animation: rotate_image 60s linear infinite;
   transform-origin: 50% 50%;} 
   @keyframes rotate_image{ 100% { transform: rotate(-360deg);}
 }
 #main > ul > li:nth-child(2) > img{
   position:absolute;
-  right:540px;bottom:410px;
+  right:160px;bottom:360px;
   width:90px;
 }
 .m_01{
   position:absolute;
-  right:500px;bottom:350px;
+  right:130px;bottom:310px;
   font-size:18px;
 }
 .m_02{
   position:absolute;
-  right:400px;bottom:270px;
+  right:29px;bottom:240px;
   font-size:16px;
   line-height:24px;
 }
 .m_03{
   position:absolute;
-  right:580px;bottom:200px;
-  font-size:18px;
+  right:215px;bottom:190px;
+  font-size:17px;
 }
 .m_04{
   position:absolute;
-  right:440px;bottom:150px;
+  right:72px;bottom:155px;
   font-size:16px;
 }
 
@@ -175,7 +168,7 @@ main{
 /* 스킬 */
 #skill{    
   position:absolute;
-  bottom:8%;right:30.7%;
+  bottom:7%;right:30.7%;
   line-height:30px;
 }
 .skill li{
@@ -224,7 +217,11 @@ main{
   border:1px solid #fff;
   position:relative;
 }
-#portfolio h2{margin:10% 0px 0px 6%;}
+#portfolio h2{
+  margin:10% 0px 0px 6%;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight:bold;
+}
 /* 꾸미기 */
 .typo2{
   position:absolute;bottom:18%;left:6.5%;
@@ -330,12 +327,11 @@ main{
 }
 /* 갤러리 사진 */
 .g_list{
-  padding-top:10px;
   display:flex;
   flex-wrap:wrap;
 }
 .g_list > li{
-  width:30%;height:180px;
+  width:33.1%;height:180px;
   overflow:hidden;
   padding:0.1%;
 }
@@ -344,7 +340,7 @@ main{
   transition:0.7s;
 }
 .g_list > li img:hover{
-  opacity:0.8;
+  opacity:0.7;
   transform:scale(1.1);
 }
 /* 갤러리 내비 클릭시 색 변경  */
