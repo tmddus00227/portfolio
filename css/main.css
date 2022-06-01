@@ -64,6 +64,7 @@ main{clear:both;}
 
 /* MAIN */
 .m_wrap{ 
+  width:100%;
   background-color:#F1F0EC;
   overflow:hidden;
 }
@@ -164,7 +165,7 @@ main{clear:both;}
   color:#735046;
 }
 .txt li:first-child, .txt li:nth-child(2), .txt li:nth-child(3){line-height:30px;}
-.txt li{padding-bottom:30px;}
+.txt li{padding-bottom:20px;}
 /* 스킬 */
 #skill{    
   position:absolute;
