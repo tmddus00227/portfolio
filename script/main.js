@@ -1,54 +1,10 @@
 $(document).ready(function(){
 
-//내비 클릭시 밑줄
-let gnb = $('.gnb li a');
-
-gnb.click(function(){
-  $(this).addClass('act4').parent().siblings().find('a').removeClass('act4'); 
-
-  $(this).removeClass('act4'); 
-  $(this).addClass('act4');
-});
-//스크롤 내릴때 내비 밑줄
-// $(window).scroll(function(){
-// 	var scroll = $(window).scrollTop();
-// 	//console.log(scroll);
-// 	if(scroll >= 0){
-// 		// console.log('a');
-// 		$(".gnb li a").removeClass('act4');
-//   } else if(scroll >= 930){
-//     $(".gnb li:first-child a").addClass('act4');
-//   }
-// 	// } else{
-// 	// 	//console.log('a');
-// 	// 	$(".gnb li:first-child a").removeClass("act4");
-// 	// }
-// });
-// var num = prompt( "원하는 숫자를 입력하세요.", "" );
-
-// if ( num >= 100 )
-// {
-//   document.write ( "입력한 숫자는 100 이상입니다." );
-// }
-// else if ( num >= 50 )
-// {
-//   document.write ( "입력한 숫자는 50 이상, 99 이하입니다." );
-// }
-// else if (num >= 0 )
-// {
-//   document.write ( "입력한 숫자는 0 이상, 49 이하입니다." )
-// }
-// else
-// {
-//   document.write( "입력한 숫자는 음수입니다." );
-// }
-
 //메인 이미지 슬라이드
 let g = 0;
 
 function fadeInOut(){
   $('.g_slide li').stop().fadeOut();
-
   if(g==2){ 
     g = 0;
   }else{ 
@@ -56,11 +12,9 @@ function fadeInOut(){
   }
 
   $('.g_slide li').eq(g).stop().fadeIn();
-
   }
 
   let Timer = setInterval(fadeInOut, 3000);
-
 
 //어바웃 스킬바
 $(window).scroll(function(){
@@ -87,6 +41,8 @@ $(window).scroll(function(){
 $('.port01').show();
 
 $('.p_con > ul > li > a').click(function(){
+  $('.p_con > ul > li > a').removeClass('act0');
+  $(this).addClass('act0');
   $('.p_con > ul > li > div').hide();
   $(this).next().show();
   return false;
@@ -95,30 +51,22 @@ $('.p_con > ul > li > a').click(function(){
 //갤러리 내비 클릭 시 색 변경
 const img_list = $('.g_list > li');
 const gbtn = $('.g_lnb > ul > li > a');
-
 $('.g_lnb > ul > li:first-child a').addClass('act1');
-
 gbtn.click(function(e){
   e.preventDefault();
-
   $('.g_lnb > ul > li > a').removeClass('act1');
   $(this).addClass('act1');
-
 });
 //갤러리 이미지 클릭시 모달창 
 const g_img = $('.g_list > li > a img');
-
 g_img.click(function(e){
   e.preventDefault();
-
   let imgUrl = $(this).attr('src');
   console.log(imgUrl);
-  let modal = "<div class='modal'><img src='"+imgUrl+"'><a href='#' title='닫기'><i class='fas fa-times'></i></a></div>";
-  $('body').append(modal);
-
-
-  $('.modal .fa-times').click(function(){
-    $('.modal').fadeOut();
+  let g_modal = "<div class='g_modal'><img src='"+imgUrl+"'><a href='#' title='닫기'><i class='fas fa-times'></i></a></div>";
+  $('body').append(g_modal);
+  $('.g_modal .fa-times').click(function(){
+    $('.g_modal').fadeOut();
     return false;
   });
 });
@@ -149,7 +97,6 @@ uiux.click(function(){
 
 //qna
 let qna = $('.qna > ul > li > a');
-
 qna.click(function(){
     $(this).next().slideDown().parent().siblings().find('p').slideUp();
     $(this).find('i').addClass('act2').parent().parent().siblings().find('i').removeClass('act2');
@@ -163,11 +110,9 @@ console.log(n);
 qc_btn.click(function(){
   n = -($(this).index()*$('#q_slide img').width());
   console.log(n);
-
   $('#q_slide .q_img').stop().animate({'left':n},500);
   $('.qc_btn li').removeClass('act3');
   $(this).addClass('act3');
-
 });
 function move(n){
   n = -(n*$('#q_slide > .q_img img').width());
@@ -188,10 +133,10 @@ let Timer2 = setInterval(function(){
   move(num);
 },3000);
 
-// 모달창
-let modal = '<div class="modal"><div class="m_img"><img src="./images/modal.jpg" alt="모달창"><p><input type="checkbox" id="ch"><label for="ch">오늘 하루 창 열지 않기</label><input type="button" value="닫기" id="m_btn"></p></div></div>';
+//모달창
+let modal ='<div class="modal"><div class="p_wrap"><div class="popup"><img src="./images/logo.png" alt="로고"><p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다.</p><p>일부 내용 및 이미지 등은 별도의 출처가 있습니다.</p><p class="close"><input type="checkbox" id="ch"><label for="ch">오늘 하루 창 열지 않기</label><input type="button" value="닫기" id="m_btn"></p></div></div></div>';
 
-$('body').append(modal);
+$('footer').append(modal);
 
 if($.cookie('popup')=='none'){
   $('.modal').hide();
@@ -208,6 +153,5 @@ function closeModal(){
 $('#m_btn').click(function(){
   closeModal();
 });
-
 
 });
