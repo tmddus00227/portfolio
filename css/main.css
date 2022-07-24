@@ -5,10 +5,7 @@ h2{
   font-size:1.6rem;
   font-weight:bold;
 }
-#about, #project, #gallery, #qna, #contact{
-  width:1300px;
-  margin:0px auto;
-}
+#main, #about, #project, #gallery, #qna, #contact{width:1300px;margin:0px auto;}
 #about h2, #about h2, #contact h2{display:none;}
 
 /* 헤더 영역 */
@@ -18,17 +15,18 @@ header{
   z-index:10000;
   background-color:rgba(242, 241, 237, .7);
 }
-
 .h_warp{
   width:1300px;
   margin:0px auto;
 }
 .h_warp h1{
-  width:55px;
+  width:50px;
   float:left;
-  margin-top:5px;
+  margin-top:7px;
 }
-.h_warp h1 img{width:100%;}
+.h_warp h1 img{
+  width:100%;
+}
 .h_warp .gnb{
   float:right;
   display:flex;
@@ -53,50 +51,16 @@ header{
 main{clear:both;}
 
 /* MAIN */
-.m_wrap{ 
-  width:100%;
-  background-color:#F1F0EC;
-  overflow:hidden;
-}
 #main{
-  width:1300px;height:930px;
-  margin:0px auto;
-  background-color:#F1F0EC;
-  position:relative;
+  height:900px;
 }
-#main > ul > li:first-child > img{
-  position:absolute;
-  left:-15%;bottom:-20%;
-  animation: rotate_image 60s linear infinite;
-  transform-origin: 50% 50%;} 
-  @keyframes rotate_image{ 100% { transform: rotate(-360deg);}
+.slide{
+  width:100%;
+  background-color: #f1f0ec;
 }
-#main > ul > li:nth-child(2) > img{
-  position:absolute;
-  right:160px;bottom:360px;
-  width:90px;
-}
-.m_01{
-  position:absolute;
-  right:130px;bottom:310px;
-  font-size:18px;
-}
-.m_02{
-  position:absolute;
-  right:29px;bottom:240px;
-  font-size:16px;
-  line-height:24px;
-}
-.m_03{
-  position:absolute;
-  right:215px;bottom:190px;
-  font-size:17px;
-}
-.m_04{
-  position:absolute;
-  right:72px;bottom:155px;
-  font-size:16px;
-}
+#main > ul{position:relative;}
+#main > ul > li{position:absolute;}
+#main > ul > li:first-child{z-index:1;}
 
 /* ABOUT */
 /* 왼쪽 */
@@ -327,6 +291,10 @@ main{clear:both;}
   width:210%;
   transition:0.7s;
 }
+.g_list > li:nth-child(8) img{
+  width:250%;
+  transition:0.7s;
+}
 .g_list > li img:hover{
   opacity:0.7;
   transform:scale(1.1);
@@ -447,36 +415,35 @@ main{clear:both;}
 
 /* CONTACT */
 #contact{height:550px;}
-#contact > ul > li:first-child{
-  width:500px;height:300px;
-  float:left;
-  padding:70px 0px 0px 120px;
+.w_contact{
+  width:1300px;height:550px;
+  margin:0px auto;
 }
-#contact > ul > li:first-child img{width:100%;}
-#contact > ul > li:nth-child(2){
-  float:right;
+.w_contact > ul > li:first-child{
+  padding-top:10px;
+  box-sizing: border-box;
+}
+.w_contact > ul > li:first-child img{
+  width:100%;
+}
+.w_contact > ul > li:nth-child(2){
+  float:left;
   font-size:1.1rem;
   line-height:30px;
-  padding:130px 300px 0px 0px;
+  padding:0px 0px 0px 450px;
 }
-#contact > ul > li:last-child a{
+.w_contact > ul > li:last-child a{
   float:right;
-  margin:25px 395px 0px 0px;
+  margin:10px 500px 0px 0px;
   padding:10px;
   font-size:1rem;
   font-weight:500;
-  color:#735046;
-  border:1px solid #735046;
+  color:#000000;
+  border:1px solid #000000;
 }
-#contact > ul > li:last-child a:hover{
+.w_contact > ul > li:last-child a:hover{
   background-color:#f1f0ec;
 }
-.ct_1, .ct_2{
-  font-weight:500;
-  color:#735046;
-}
-.ct_1{padding-right:23px;}
-.ct_2{padding-right:15px;}
 
 /* 푸터 영역 */
 footer{
