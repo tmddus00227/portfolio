@@ -31,6 +31,53 @@ $('.p_con > ul > li > a').click(function(){
   $(this).next().show();
   return false;
 });
+  
+//포트폴리오 상세보기 팝업
+//힐링횡성 상세보기
+const detail_1 = $('.port01 > .list > .p_img > a img');
+detail_1.click(function(e){
+  e.preventDefault();
+  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/healingdetail.png" alt="힐링횡성상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  $('body').append(detail1);
+  $('.d_page .fa-times').click(function(){
+    $('.d_page').fadeOut();
+    return false;
+});
+});
+//산골초가펜션 상세보기
+const detail_2 = $('.port02 > .list > .p_img > a img');
+detail_2.click(function(e){
+  e.preventDefault();
+  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/sangolchogadetail.png" alt="산골초가펜션상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  $('body').append(detail1);
+  $('.d_page .fa-times').click(function(){
+    $('.d_page').fadeOut();
+    return false;
+});
+});
+//크리스피크림도넛 상세보기
+const detail_3 = $('.port03 > .list > .p_img > a img');
+detail_3.click(function(e){
+  e.preventDefault();
+  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/krispydetail.png" alt="크리스피크림도넛상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  $('body').append(detail1);
+  $('.d_page .fa-times').click(function(){
+    $('.d_page').fadeOut();
+    return false;
+});
+});
+//블랙핑크 상세보기
+const detail_4 = $('.port04 > .list > .p_img > a img');
+detail_4.click(function(e){
+  e.preventDefault();
+  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/blackpinkdetail.png" alt="블랙핑크상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  $('body').append(detail1);
+  $('.d_page .fa-times').click(function(){
+    $('.d_page').fadeOut();
+    return false;
+});
+});
+
 
 //갤러리 내비 클릭 시 색 변경
 const img_list = $('.g_list > li');
@@ -54,7 +101,6 @@ g_img.click(function(e){
     return false;
   });
 });
-
 
 //갤러리 내비게이션 변수선언
 const total = $('.g_lnb > ul > li:first-child');
