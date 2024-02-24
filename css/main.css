@@ -133,7 +133,7 @@
   #section2 .t_tt { padding:0px 0% 2% 6%; }
   #section2 .t_tt li p { width:97%; position:relative; font-size:1rem; padding:9px 0px; line-height:23px; }
   #section2 ul .t_txt2 li p:before { content:""; position:absolute; top:22px; left:-20px; width:6px; height:6px; border-radius:100%; background-color:#b09d97; }
-  #section2 .t_timg { width:100%; display:flex; padding-left:3%; }
+  #section2 .t_timg { width:100%; display:flex; }
   #section2 .t_timg li { width:7%; padding-left:1.5%; }
   #section2 .t_timg li img { width:100%; }
   
