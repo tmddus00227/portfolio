@@ -34,7 +34,7 @@
   #section1 ul li .a_img2 img { width:200px; height:150px; object-fit:cover; object-position:0px -51px; border-radius:30px; margin:8% 0 0 5%; box-sizing:border-box; }
   #section1 ul li .a_txt1 { font-size:1.1rem; line-height:25px; padding-bottom:9px; }
   #section1 ul li .a_txt1 span { font-weight:bold; }
-  #section1 ul li .a_txt2 p { padding:7px 0px; font-size:12px; line-height:20px; }
+  #section1 ul li .a_txt2 p { width:95%; padding:7px 0px; font-size:12px; line-height:20px; }
   #section1 ul li:first-child { position:relative; }
   #section1 ul li:last-child { padding:2% 0 0 5%; }
   
@@ -56,7 +56,7 @@
   .p_con > ul > li > a { font-size:0.9rem; font-weight:500; }
   .act0 { color:#333; font-size:1.1rem; z-index:1000000; font-weight:500; }
   .port01,.port02,.port03,.port04 { position:absolute; left:5%; top:11%; display:none; } 
-  .p_txt { width: 410px; margin: 5% 0px 0px 0%; }
+  .p_txt { margin: 5% 0px 0px 0%; }
   .p_t01 { font-size:0.9rem; padding:10px 0px; }
   .p_t02 { font-size:1.5rem; padding-bottom:15px; font-weight:500; }
   .p_t03 { font-size:1rem; padding:7px 0px; }
@@ -235,8 +235,8 @@
   .act0 { color:#333; font-size:1.1rem; z-index:1000000; font-weight:500; }
   .port01,.port02,.port03,.port04 { position:absolute; left:5%; top:11%; display:none; } 
   .list { display:flex; }
-  .p_txt { width:410px; margin:9% 0px 0px 6%; }
-  .p_t01 { font-size:1.05rem; padding:10px 0px; }
+  .p_txt { margin:9% 0px 0px 6%; }
+  .p_t01 { font-size:15px; padding:10px 0px; }
   .p_t02 { font-size:1.6rem; padding-bottom:30px; font-weight:500; }
   .p_t03 { font-size:1.1rem; padding:7px 0px; }
   .p_t03 span { padding-right:10px; }
