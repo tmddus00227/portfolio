@@ -28,10 +28,10 @@ $('.p_con > ul > li > a').click(function(){
 const detail_1 = $('.port01 > .list > .p_img > a img');
 detail_1.click(function(e){
   e.preventDefault();
-  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/sangolchogadetail.jpg" alt="산골초가펜션상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  let detail1 = '<div class="p_page"><div class="p_page1"><img src="./images/sangolchogadetail.jpg" alt="산골초가펜션상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
   $('body').append(detail1);
-  $('.d_page .fa-times').click(function(){
-    $('.d_page').fadeOut();
+  $('.p_page .fa-times').click(function(){
+    $('.p_page').fadeOut();
     return false;
 });
 });
@@ -39,10 +39,10 @@ detail_1.click(function(e){
 const detail_2 = $('.port02 > .list > .p_img > a img');
 detail_2.click(function(e){
   e.preventDefault();
-  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/krispydetail.jpg" alt="크리스피크림도넛상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  let detail1 = '<div class="p_page"><div class="p_page1"><img src="./images/krispydetail.jpg" alt="크리스피크림도넛상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
   $('body').append(detail1);
-  $('.d_page .fa-times').click(function(){
-    $('.d_page').fadeOut();
+  $('.p_page .fa-times').click(function(){
+    $('.p_page').fadeOut();
     return false;
 });
 });
@@ -50,10 +50,10 @@ detail_2.click(function(e){
 const detail_3 = $('.port03 > .list > .p_img > a img');
 detail_3.click(function(e){
   e.preventDefault();
-  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/blackpinkdetail.jpg" alt="블랙핑크상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  let detail1 = '<div class="p_page"><div class="p_page1"><img src="./images/blackpinkdetail.jpg" alt="블랙핑크상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
   $('body').append(detail1);
-  $('.d_page .fa-times').click(function(){
-    $('.d_page').fadeOut();
+  $('.p_page .fa-times').click(function(){
+    $('.p_page').fadeOut();
     return false;
 });
 });
@@ -61,10 +61,10 @@ detail_3.click(function(e){
 const detail_4 = $('.port04 > .list > .p_img > a img');
 detail_4.click(function(e){
   e.preventDefault();
-  let detail1 = '<div class="d_page"><div class="d_page1"><img src="./images/healingdetail.jpg" alt="힐링횡성상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
+  let detail1 = '<div class="p_page"><div class="p_page1"><img src="./images/healingdetail.jpg" alt="힐링횡성상세페이지"></div><a href="#" title="닫기"><i class="fas fa-times"></i></a></div>';
   $('body').append(detail1);
-  $('.d_page .fa-times').click(function(){
-    $('.d_page').fadeOut();
+  $('.p_page .fa-times').click(function(){
+    $('.p_page').fadeOut();
     return false;
 });
 });
